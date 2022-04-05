@@ -1,0 +1,571 @@
+/********************************* GENERAL *********************************/
+
+html, body{
+    max-width: 100%;
+    height: 100%;
+    font-family: 'Roboto', sans-serif;
+}
+
+.bg-parallax{
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.section-title {
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+.section-title h3{
+    padding: 0;
+    margin-bottom: 25px;
+    font-size: 3rem;
+    font-weight: 700;
+}
+
+.underline-title{
+    display: inline-block;
+    width: 35px;
+    background-color: #1188F7;
+    height: 3px;
+}
+
+.underline-title-white{
+    display: inline-block;
+    width: 35px;
+    background-color: #fff;
+    height: 3px;
+}
+
+@media only screen and (max-width: 991px){
+
+    .section-title h3{
+        font-size: 2.2rem;
+    }
+
+}
+
+
+/********************************* BUTTONS *********************************/
+
+.btn-white{
+    color: #fff;
+    border-color: #fff;
+    border-radius: 0;
+    padding: 12px 15px;
+    font-size: 1.4rem;
+    font-weight: 500;
+}
+
+.btn-white:hover,
+.btn-white:focus{
+    color: #1188F7;
+    background: #fff;
+    border: 1px solid #1188F7;
+}
+
+.btn-blue{
+    color: #1188F7;
+    border-color: #1188F7;
+    border-radius: 0;
+    padding: 12px 15px;
+    font-size: 1.4rem;
+    font-weight: 500;
+}
+
+.btn-blue:hover,
+.btn-blue:focus{
+    color: #fff;
+    background: #1188F7;
+    border: 1px solid #1188F7;
+}
+
+@media only screen and (max-width: 991px){
+    .btn-white,
+    .btn-blue{
+        padding: 10px 12px;
+        font-size: 1.2rem;
+    }
+}
+
+/*********************************** NAV ***********************************/
+
+header img{
+    width: 12rem;
+}
+
+header i{
+    font-size: 1.5rem;
+    color: #fff;
+    padding: 4px 6px;
+}
+
+nav{
+    transition: all 1s ease;
+}
+
+nav .container{
+    padding: 15px 10px;
+}
+
+.nav-background{
+    background: rgba(0, 0, 0, 0.9);
+}
+
+.navbar ul li{
+    margin: auto;
+}
+
+#master-gym-nav{
+    padding: 0px;
+}
+
+#master-gym-nav ul li a{
+    color: #fff;
+    padding: 15px 5px;
+    font-size: 0.8rem;
+    text-transform: uppercase;
+}
+
+#master-gym-nav ul li a:hover,
+#master-gym-nav ul li a:focus{
+    color: #1188F7;
+}
+
+#master-gym-nav button{
+    border: none;
+    box-shadow: none;
+}
+
+@media only screen and (max-width: 991px){
+    
+    .navbar{
+        background: rgba(0, 0, 0, 0.7);
+    }
+
+}
+
+/*********************************** HOME ***********************************/
+
+#home h1, #home h3{
+    color: #fff;
+    margin: 10px auto;
+    text-transform: uppercase;
+}
+
+#home h1{
+    font-size: 5.5rem;
+    font-weight: 900;
+}
+#home h3{
+    color: rgba(255, 255, 255, 0.9);
+    font-size: 1.1rem;
+    font-weight: 500;
+    margin-bottom: 45px;
+}
+
+.home-container{
+    height: 100vh;
+    width: 100%;
+    background-image: url(../img/home-bg.jpg);
+    display: table;
+}
+
+.home-container-inner{
+    display: table-cell;
+    vertical-align: middle;
+    text-align: center;
+    background: rgba(0, 0, 0, 0.7);
+}
+
+@media only screen and (max-width: 991px){
+    
+    #home h1{
+        font-size: 3rem;
+        font-weight: 900;
+        padding: 0 30px;
+        margin-bottom: 10px;
+    }
+    #home h3{
+        color: rgba(255, 255, 255, 0.9);
+        font-size: 0.8rem;
+        font-weight: 500;
+        padding: 0 30px;
+        margin: 10px 0 25px;
+    }
+
+}
+
+
+/*********************************** ABOUT ***********************************/
+
+#about{
+    padding: 70px 0px;
+    text-align: center;
+    background: rgb(234, 237, 243);
+}
+
+.about-col{
+    padding: 50px;
+}
+
+#about p{
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 40px;
+}
+
+.bg-about{
+    background-image: url(../img/about.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+@media only screen and (max-width: 991px){
+    .bg-about{
+        display: none;
+    }
+}
+
+/*********************************** gym-photos ***********************************/
+
+#gym-photos{
+    width: 100%;
+    padding-top: 70px;
+}
+
+#gym-photos .container-fluid{
+    padding: 0;
+    text-align: center;
+}
+
+#gym-photos .container-fluid [class*=col-]{
+    padding: 0;
+}
+
+.img-container{
+    overflow: hidden;
+}
+
+#gym-photos img:hover{
+    transform: scale(1.2);
+}
+
+#gym-photos img{
+    cursor: zoom-in;
+    transition: all 0.8s ease;
+    height: 100%;
+    width: 100%;
+}
+
+#gym-photos .img-parent-container{
+    margin: 0;
+}
+
+@media only screen and (max-width: 700px){
+    #gym-photos .img-container{
+        max-width: 50%;
+    }
+}
+
+/*********************************** members ***********************************/
+
+#members{
+    background: rgb(234, 237, 243);
+    padding: 70px 0px;
+}
+
+#members .row{
+    text-align: center;
+}
+
+.team-member{
+    padding: 20px;
+}
+
+.member-info{
+    padding: 15px 10px;
+}
+
+.member-socials{
+    display: inline-block;
+}
+
+.member-name{
+    font-size: 2rem;
+    font-weight: 700;
+    line-height: 40px;
+}
+
+.member-designation{
+    font-size: 1rem;
+    font-weight: 700;
+    font-style: italic;
+    color: #1188F7;
+    line-height: 25px;
+}
+
+#members i{
+    font-size: 1.5rem;
+    padding: 10px 10px;
+    color: gray;
+}
+
+#members i:hover,
+#members i:hover{
+    color: #1188F7;
+}
+
+#members .owl-nav{
+    margin: 0;
+}
+
+#members .owl-prev,
+#members .owl-next{
+    display: none;
+}
+
+/*********************************** testimonials ***********************************/
+
+#testimonials{
+    padding: 70px 0px;
+    text-align: center;
+}
+
+#testimonials .container-fluid .row img{
+    max-width: 300px;
+    border-radius: 100%;
+}
+
+.testimonials-wrapper{
+    background-image: url(../img/testimonials/2.jpg);
+}
+
+.testimonials-content{
+    padding: 150px 0px;
+    background: rgba(0, 0, 0, 0.8);
+}
+
+.customer-content{
+    padding: 25px 100px;
+}
+
+.customer-content h3,
+.customer-content p{
+    margin: 25px auto;
+    color: #fff;
+}
+
+.customer-content h3{
+    font-size: 3rem;
+    font-weight: 700;
+}
+
+.customer-content p{
+    position: relative;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1rem;
+    font-weight: 300;
+    max-width: 480px;
+    margin: auto;
+    padding: 40px;
+}
+
+.customer-content p::before{
+    position: absolute;
+    content: "\201C";
+    font-size: 5rem;
+    top: 0px;
+    left: 0px;
+}
+
+.customer-content p::after{
+    position: absolute;
+    content: "\201D";
+    font-size: 5rem;
+    bottom: 0px;
+    right: 0px;
+}
+
+@media only screen and (max-width: 991px){
+
+    .customer-content{
+        padding: 0px;
+    }
+
+    .customer-content p{
+        margin: 55px 30px;
+        margin: auto;
+    }
+
+}
+
+
+/*********************************** pricing ***********************************/
+
+#pricing{
+    text-align: center;
+}
+
+#pricing .pricing-list{
+    margin: 0;
+    padding: 40px;
+}
+
+.pricing-item{
+    margin: 25px;
+}
+
+.pricing-item h3{
+    font-size: 5.5rem;
+    font-weight: 900;
+}
+
+#pricing p{
+    color: rgba(0,0,0,0.5);
+}
+
+#pricing ul{
+    list-style: none;
+    padding-left: 0;
+    padding-top: 20px;
+}
+
+#pricing ul li{
+    padding: 8px 0;
+}
+
+#pricing ul li .linethrough{
+    text-decoration: line-through;
+    margin-bottom: 0;
+}
+
+#pricing .plan{
+    padding: 35px 10px;
+    height: 100%;
+}
+
+#pricing .master-plan{
+    background: #1188F7;
+}
+
+#pricing .pricing-list{
+    padding: 40px 0 0;
+}
+
+#pricing .bg-grey{
+    background: rgb(234, 237, 243);
+}
+
+#pricing .no-padding{
+    padding-left: 0;
+    padding-right: 0;
+    margin: 0;
+}
+
+#pricing a{
+    margin-top: 45px;
+}
+
+#pricing .pricing-name-master,
+#pricing .pricing-price-master,
+#pricing .p-master,
+#pricing .li-master{
+    color: #fff;
+}
+
+/*********************************** contact ***********************************/
+
+#contact{
+    background: rgb(60, 64, 68);
+    padding: 60px 80px;
+}
+
+.contact-item{
+    margin-bottom: 45px;
+}
+
+.address{
+    margin-bottom: 60px;
+}
+
+.address h2{
+    font-size: 2rem;
+    font-weight: 700;
+    color: #fff;
+}
+
+.contact-title{
+    font-size: 1.2rem;
+    font-weight: 300;
+    color: #fff;
+}
+
+.address p{
+    font-size: 1rem;
+    font-weight: 300;
+    color: #fff;
+}
+
+.contact-socials{
+    display: inline-block;
+}
+
+#contact i{
+    font-size: 1.2rem;
+    padding: 10px 10px;
+    color: #fff;
+}
+
+#contact i:hover,
+#contact i:hover{
+    color: #1188F7;
+}
+
+.form-contact{
+    border-radius: 0;
+    padding: 15px;
+    margin: 10px auto;
+}
+
+/*********************************** footer ***********************************/
+
+footer{
+    text-align: center;
+    padding: 35px;
+    background: rgb(39, 43, 46);
+}
+
+footer h3{
+    font-size: 0.8rem;
+    font-weight: 300;
+    color: #fff;
+}
+
+.button-up{
+    transition: all 0.5s ease-in-out;
+}
+
+.button-up{
+    position: fixed;
+    bottom: 35px;
+    right: 35px;
+    border: 1px solid #1188F7;
+    color: #1188F7;
+    font-size: 0.8rem;
+    padding: 10px;
+    visibility: hidden;
+}
+
+.button-visible{
+    visibility: visible;
+}
+
+.button-up:hover,
+.button-up:focus{
+    color: #fff;
+    background: #1188F7;
+}
